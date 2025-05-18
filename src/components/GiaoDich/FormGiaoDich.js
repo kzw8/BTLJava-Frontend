@@ -85,7 +85,7 @@ export default function FormGiaoDich({ initialData, onClose, onSuccess }) {
             if (isEdit) {
                 // Sửa thì PUT
                 await axios.put(
-                    `/api/giaodich/them-giaodich${initialData.id}/`,
+                    `/api/giaodich/them-giaodich/${initialData.id}`,
                     payload
                 );
             } else {
