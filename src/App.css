@@ -1,0 +1,41 @@
+/* App.css */
+:root {
+  --sidebar-collapsed: 64px;
+  --sidebar-expanded: 220px;
+  --header-height: 56px;
+}
+
+.app-grid {
+  display: grid;
+  /* cột 1 = sidebar, cột 2 = content */
+  grid-template-columns: var(--sidebar-expanded) 1fr;
+  grid-template-rows: var(--header-height) 1fr auto;
+  grid-template-areas:
+    "header  header"
+    "sidebar content"
+    "footer  footer";
+  height: 100vh;
+  overflow: visible;
+  transition: grid-template-columns 0.2s ease;
+}
+.app-grid.collapsed {
+  grid-template-columns: var(--sidebar-collapsed) 1fr;
+}
+
+.app-header  { grid-area: header; position: sticky; top: 0; z-index: 100; }
+.app-sidebar {
+  grid-area: sidebar;
+  overflow-y: auto;
+  transition: width 0.2s ease;
+  background: #f8f9fa;
+  overflow-x: hidden;
+  height: auto;
+}
+
+.page-container {
+  height: calc(100% - var(--header-height));
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.app-footer  { grid-area: footer; text-align: center; }
+

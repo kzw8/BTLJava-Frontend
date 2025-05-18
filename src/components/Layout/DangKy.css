@@ -1,0 +1,82 @@
+/* Register.css */
+.register-container {
+    max-width: 400px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+    font-size: 1.75rem;
+}
+
+.form-group {
+    margin-bottom: 1.25rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color .2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4e73df;
+    box-shadow: 0 0 0 2px rgba(78,115,223,0.2);
+}
+
+.error-message {
+    margin-bottom: 1rem;
+    color: #e74a3b;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.register-button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4e73df;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color .2s;
+}
+
+.register-button:hover {
+    background-color: #2e59d9;
+}
+
+.register-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.register-footer a {
+    color: #4e73df;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}

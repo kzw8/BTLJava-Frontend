@@ -1,0 +1,128 @@
+/* src/components/Layout/BaoCaoChiTieu.css */
+
+:root {
+    --header-height: 56px;
+    --footer-height: 40px;
+    --primary-color: #4f46e5;
+    --bg-page: #f0f2f5;
+    --bg-card: #fafafb;
+    --border-light: #dde2e6;
+    --border-card: #e9ecef;
+    --hover-row: #eef2ff;
+}
+
+.reports-category-page {
+    background-color: var(--bg-page);
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    padding: 2rem;
+}
+
+.reports-category-page .rc-content > .col-lg-8 > .shadow-sm.card {
+    margin-inline: 19px;
+}
+
+.rc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-light);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+.rc-title {
+    margin: 0;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.rc-filter-select {
+    width: 120px;
+}
+.rc-filter-select .form-select {
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.rc-filter-select .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25);
+}
+
+.rc-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+/* Card chung */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.card-header {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-card);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+}
+.card-body {
+    padding: 1.5rem;
+    height: auto;
+}
+
+/* Bảng chi tiết */
+.cr-table {
+    margin: 0;
+    font-size: 0.95rem;
+}
+.cr-table thead th {
+    background-color: #f8f9fa;
+    border-bottom: none;
+    color: #495057;
+}
+.cr-table tbody tr:hover {
+    background-color: var(--hover-row);
+}
+.cr-table td,
+.cr-table th {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+.text-end {
+    text-align: right;
+}
+
+/* Spinner loading */
+.text-center.py-5 {
+    padding: 3rem 0;
+}
+.spinner-border {
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 992px) {
+    .rc-content {
+        grid-template-columns: 1fr;
+    }
+}
+.transaction-chart-wrapper {
+    width: 100%;
+    height: 370px;
+}
+
+
+.report-chart-card .card-body {
+    width: 100%;
+    height: 350px;
+
+    padding: 0;
+
+
+    display: flex;
+    flex-direction: column;
+}
+
+

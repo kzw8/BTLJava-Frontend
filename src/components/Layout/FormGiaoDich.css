@@ -1,0 +1,46 @@
+/* formgiaodich.css */
+
+/* Overlay phủ full màn hình, mờ nền và center nội dung */
+.modal-overlay {
+    position: fixed ;
+    top: 0; left: 0; right: 0; bottom: 0 ;
+    background: rgba(0,0,0,0.5);       /* nền mờ */
+    display: flex;                      /* bật flex để center */
+    align-items: center;                /* vertical center */
+    justify-content: center;            /* horizontal center */
+    padding: 1rem;                      /* khoảng cách với mép */
+    overflow-y: auto;                   /* khi nội dung cao hơn màn hình vẫn scroll được */
+    z-index: 3000;                      /* đảm bảo cao hơn header/sidebar */
+}
+
+/* Nội dung modal trắng, bo góc, có scroll nếu quá cao */
+.modal-content {
+    background-color: #ffffff !important; ;          /* nền trắng đục */
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    width: 100%;
+    max-width: 400px;                   /* hoặc 360px tùy bạn */
+    max-height: calc(100vh - 2rem);     /* chừa 1rem trên và 1rem dưới */
+    overflow-y: auto;                   /* scroll nội dung */
+    overflow-x: hidden;
+}
+
+/* Còn lại giữ nguyên */
+.modal-content .form-group {
+    margin-bottom: 1rem;
+}
+.modal-content .form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
+/* GiaoDich.css */
+.giao-dich-page .chart-wrapper {
+    /* tạo khoảng cách giữa chart và bảng */
+    margin-bottom: 5rem;
+}
+
+.giao-dich-page .table-wrapper {
+    /* padding hai bên tránh bị cắt góc cột đầu */
+    padding: 0 1rem;
+}

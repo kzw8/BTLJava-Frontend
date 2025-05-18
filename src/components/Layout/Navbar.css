@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 56px;
+    min-height: 56px;
+}
+
+.navbar .navbar-brand .site-logo {
+    height: 120px;
+    width: auto;
+    max-height: 100%;
+}
+
+
+.navbar {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.navbar-dark.bg-dark {
+    background-color: #1f2023;
+}
+.brand-text{
+    font-size: 1.8rem;
+
+}
